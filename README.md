@@ -31,6 +31,22 @@ docker compose up -d
 
 Once completed, you can access the web service on `localhost:3080`
 
+# RAG
+
+Use RAG with OpenAI Embedding (default)
+
+1. Add the following to oyur `.env` file:
+
+```env
+RAG_API_URL=http://host.docker.internal:8000
+```
+
+2. If your OpenAI API key is set to “user_provided,” also add this to your .env file to provide an OpenAI API key:
+
+```env
+RAG_OPENAI_API_KEY=sk-your-openai-api-key-example
+```
+
 # Configuration
 
 1. Create administrator user
